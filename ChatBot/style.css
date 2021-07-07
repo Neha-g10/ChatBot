@@ -1,0 +1,186 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: grey;
+    font-family: sans-serif
+}
+.bot {
+    background-color: #DD571C;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.bot-inside{
+    background-color: #DD571C;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.bot-icon {
+    height: 40px;
+    width: 40px;
+}
+.bot-icon:hover{
+    opacity: 0.8;
+}
+.bot-icon-inside{
+    height: 40px;
+    width: 40px; 
+}
+.chat-box{
+    width: 350px;
+    height: 500px;
+   margin: auto;
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
+   display: none;
+   background-color: white;
+   border-radius:10px;
+   
+}
+#top{
+    height: 40%;
+    background-color: #ED7014;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    animation: fadeAnimation ease 3s;
+   
+}
+#top h5, span, p, img{
+    margin: 5px;
+}
+
+.close-icon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.close-icon:hover{
+    opacity: 0.6;
+}
+#handwave{
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+#hello{
+    display: inline-flex;
+}
+#bottom{
+    height: 60%;
+    background-color: white;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+fieldset{
+    border: 1px solid gainsboro;
+    margin-top: -80px;
+    background: white;
+    border-radius: 5px;
+    animation: fadeAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+legend{
+    padding-left: 15px;
+}
+#content{
+    margin: 10px;
+}
+#bottom p{
+    margin-bottom: 10px;
+}
+#content span{
+    color: #ED7014;
+    border-radius: 50%;
+}
+li{
+    border: 2px solid gainsboro;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    transition: ease-in-out;
+    
+}
+ul{
+    list-style: none;
+    
+}
+ul li::before{
+    content: "\2022";
+    color: #ED7014;
+    font-weight: bold;
+    display: inline-block;
+     width: 15px;
+     margin-left: 4px;
+
+
+}
+#button{
+    border-radius: 30px;
+    border: 1px solid gainsboro;
+    box-shadow: 1px 1px 1px gainsboro;
+    padding: 12px 30px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 550;
+   margin: auto;
+   animation: fadeAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#chat-icon{
+    width: 20px;
+    height: 20px;
+ padding-right: 5px;
+}
+.home{
+    display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin-top: 200px;
+}
+.home h1{
+    margin-bottom: 50px;
+}
+@keyframes top {
+    0%{
+        background-color: white;
+    }
+    100%{
+        background-color: #ED7014;
+    }
+}
+@keyframes fadeAnimation {
+    0%{
+     opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
+   
+}
+
